@@ -1,10 +1,9 @@
-run lambda { |env|
+run lambda {
   [
-    200, 
+    302, 
     {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
+      'Location'  => 'http://impact.brighterplanet.com'
     },
-    File.open('index.html', File::RDONLY)
+    []
   ]
 }
