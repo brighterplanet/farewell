@@ -1,4 +1,4 @@
-run lambda {
+run lambda { |env|
   [
     302, 
     {
